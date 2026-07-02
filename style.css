@@ -1,0 +1,81 @@
+body {
+    background-color: #0b0f19;
+    color: #d1d5db;
+    font-family: Segoe UI, Tahoma, Geneve, Verdana, sans-serif;
+    padding: 30px; /* inside */
+    max-width: 50%;
+    margin: auto; /* outside */
+}
+
+#title1 {
+    border-radius: 10px; /* let the border have a round corner */
+    border: solid 5px rgb(0, 255, 136);
+    box-shadow: 0 0 15px rgb(0, 255, 136, 1);
+    text-shadow: 0px 0px 20px rgb(0, 255, 204, 0.5); /*highlight the text*/
+    color: #00ffcc;
+    padding: 1%;
+    margin: 1%;
+}
+
+.neuro {
+    border-radius: 15px;
+    border: 3px solid #00ffcc; /* let Twin image have a border */
+    box-shadow: 0 0 15px rgb(0, 255, 204, 0.3); /* let border have a highlight */
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.blogcontainer {
+    display: flex; /* Important let the Element in a row */
+    flex-direction: row; /* Let the line in a row */
+    justify-content: flex-start; /* Let blog container start at left */
+    gap: 20px; /* the blog container gap between them */
+    flex-wrap: wrap; /* If screen narrow,The context will auto change line */
+    margin-top: 20px;
+}
+
+.blog {
+    background-color: rgb(2, 35, 48);
+    flex: 1; 
+    height: 300px;
+    overflow-y: auto; /* If Content Overflow auto used Vertical Scrolling */
+    min-width: 250px; /* Set a minimum width for the blog container */
+    max-width: 350px; /* Set a maximum width for the blog container */
+    border-radius: 0 10px 0 10px;
+    border: solid 3px rgb(9, 239, 255);
+    box-shadow: 0 0 10px rgb(9, 239, 255, 0.5);
+    color:rgb(0, 255, 136);
+    text-shadow: 0 0 20px rgb(0, 255, 136, 1);
+    padding: 15px; /* Let content look better not too close left */
+}
+
+/* 控制滾動條整體的寬度 */
+.blog::-webkit-scrollbar {
+    width: 6px;
+}
+/* 控制滾動條裡面的滑塊顏色 */
+.blog::-webkit-scrollbar-thumb {
+    background: rgb(9, 239, 255); 
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(9, 239, 255, 0.5);
+}
+/* 控制滾動條的軌道背景 */
+.blog::-webkit-scrollbar-track {
+    background: rgb(2, 35, 48);
+}
+
+#blogtitle1 {
+    color: rgb(0, 255, 255);
+    text-shadow: 0 0 20px rgb(0, 255, 255, 1);
+}
+
+#blogtitle2 {
+    color: rgb(255, 0, 200);
+    text-shadow: 0 0 20px rgb(255, 0, 200, 1);
+}
+
+#blogtitle3 {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 20px rgb(255, 0, 0);
+}
